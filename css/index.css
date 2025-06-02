@@ -1,0 +1,38 @@
+main {
+    & nav {
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+        height: calc(100vh - 100px);
+        float:left;
+        position: relative;
+        top:0;
+        margin-right:15px;
+        background-color:lightblue;
+
+        & a {
+            color: white;
+            padding: 4px;
+            text-decoration: none;
+            background-color: #779697;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px #779697;
+
+            &:hover {
+                background-color:lightgray;
+            }
+        }
+    }
+    & section {
+        height: calc(100vh - 100px);
+        overflow-y: auto;
+    }
+}
+
+nav {
+    a.selected {
+        background-color: white;
+        color:Black;
+    }
+}
